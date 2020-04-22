@@ -13,6 +13,9 @@
 import SInput from "../../../src/components/input/Input.vue";
 export default {
   name: "input-demo",
+  data() {
+    return { msg: "" };
+  },
   components: {
     SInput
   }

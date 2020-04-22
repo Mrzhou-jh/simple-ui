@@ -6,6 +6,7 @@
       type="text"
       :placeholder="placeholder"
       :value="value"
+      @input="$emit('input',$event.target.value)"
     />
     <template v-if="error">
       <s-svg-icon :class="{ error: error }" iconname="jinggao"></s-svg-icon>
