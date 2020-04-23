@@ -41,8 +41,8 @@
 <s-button>按钮</s-button>
 <s-button disabled>按钮</s-button>
 <s-button round>按钮</s-button>
-<s-button svgicon="shezhi">按钮</s-button>
-<s-button svgicon="shezhi" round>按钮</s-button>
+<s-button svgicon="set">按钮</s-button>
+<s-button svgicon="set" round>按钮</s-button>
 ```
 
 ## 图标按钮
@@ -53,11 +53,11 @@
 示例代码
 
 ```html
-<s-button svgicon="shezhi" iconPosition="right" colortheme="primary">设置</s-button>
-<s-button svgicon="zan" colortheme="success">点赞</s-button>
-<s-button svgicon="jiazai" iconPosition="right" :loading="true" colortheme="info">加载</s-button>
-<s-button svgicon="shangchuan" iconPosition="right"  @click="loading = !loading" :loading="loading" colortheme="warning">加载</s-button>
-<s-button svgicon="xiazai" :loading="loading2" @click="loading2 = !loading2" colortheme="danger">下载</s-button>
+<s-button svgicon="set" iconPosition="right" colortheme="primary">设置</s-button>
+<s-button svgicon="fabulous" colortheme="success">点赞</s-button>
+<s-button svgicon="loading" iconPosition="right" :loading="true" colortheme="info">加载</s-button>
+<s-button svgicon="upload" iconPosition="right"  @click="loading = !loading" :loading="loading" colortheme="warning">加载</s-button>
+<s-button svgicon="download" :loading="loading2" @click="loading2 = !loading2" colortheme="danger">下载</s-button>
 ```
 ## 组合按钮
 
@@ -68,28 +68,28 @@
 
 ```html
 <s-button-group>
-    <s-button svgicon="zuojiantou" iconPosition="left" colortheme="primary">上一页</s-button>
+    <s-button svgicon="left-arrow" iconPosition="left" colortheme="primary">上一页</s-button>
     <s-button colortheme="primary">更多</s-button>
-    <s-button svgicon="youjiantou" iconPosition="right" colortheme="primary">下一页</s-button>
+    <s-button svgicon="right-arrow" iconPosition="right" colortheme="primary">下一页</s-button>
 </s-button-group>
 <s-button-group>
-    <s-button svgicon="zuojiantou" iconPosition="left" colortheme="success">上一页</s-button>
+    <s-button svgicon="left-arrow" iconPosition="left" colortheme="success">上一页</s-button>
     <s-button colortheme="success">更多</s-button>
-    <s-button svgicon="youjiantou" iconPosition="right" colortheme="success">下一页</s-button>
+    <s-button svgicon="right-arrow" iconPosition="right" colortheme="success">下一页</s-button>
 </s-button-group>
 <s-button-group>
-    <s-button svgicon="zuojiantou" iconPosition="left" colortheme="info">上一页</s-button>
+    <s-button svgicon="left-arrow" iconPosition="left" colortheme="info">上一页</s-button>
     <s-button colortheme="info">更多</s-button>
-    <s-button svgicon="youjiantou" iconPosition="right" colortheme="info">下一页</s-button>
+    <s-button svgicon="right-arrow" iconPosition="right" colortheme="info">下一页</s-button>
 </s-button-group>
 <s-button-group>
-    <s-button svgicon="zuojiantou" iconPosition="left" colortheme="warning">上一页</s-button>
+    <s-button svgicon="left-arrow" iconPosition="left" colortheme="warning">上一页</s-button>
     <s-button colortheme="warning">更多</s-button>
-    <s-button svgicon="youjiantou" iconPosition="right" colortheme="warning">下一页</s-button>
+    <s-button svgicon="right-arrow" iconPosition="right" colortheme="warning">下一页</s-button>
 </s-button-group>
 <s-button-group>
-    <s-button svgicon="zuojiantou" iconPosition="left" colortheme="danger">上一页</s-button>
+    <s-button svgicon="left-arrow" iconPosition="left" colortheme="danger">上一页</s-button>
     <s-button colortheme="danger">更多</s-button>
-    <s-button svgicon="youjiantou" iconPosition="right" colortheme="danger">下一页</s-button>
+    <s-button svgicon="right-arrow" iconPosition="right" colortheme="danger">下一页</s-button>
 </s-button-group>
 ```

@@ -12,7 +12,7 @@
     @click="$emit('click', $event)"
   >
     <s-svg-icon :iconname="svgicon" v-if="svgicon && !loading"></s-svg-icon>
-    <s-svg-icon iconname="jiazai" :loading="loading" v-if="loading"></s-svg-icon>
+    <s-svg-icon iconname="loading" :loading="loading" v-if="loading"></s-svg-icon>
     <div class="btn-text">
       <slot>默认按钮</slot>
     </div>

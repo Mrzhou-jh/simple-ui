@@ -12,7 +12,7 @@
       @blur="$emit('blur',$event)"
     />
     <template v-if="error">
-      <s-svg-icon :class="{ error: error }" iconname="jinggao"></s-svg-icon>
+      <s-svg-icon :class="{ error: error }" iconname="warning"></s-svg-icon>
       <span :class="{ error: error }">{{ error }}</span>
     </template>
   </div>

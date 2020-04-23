@@ -5,7 +5,9 @@
         <slot name="header">
           <span>{{title}}</span>
         </slot>
-        <button @click.self="close">X</button>
+        <button @click="close">
+          <s-svg-icon iconname="close"></s-svg-icon>
+        </button>
       </div>
       <div class="s-d-body">
         <slot>
@@ -20,8 +22,12 @@
 </template>
 
 <script>
+import SSvgIcon from "../svgicon/SvgIcon.vue";
 export default {
   name: "SDialog",
+  components: {
+    SSvgIcon
+  },
   props: {
     visible: {
       type: Boolean,
