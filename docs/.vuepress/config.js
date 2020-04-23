@@ -9,7 +9,7 @@ module.exports = {
       { text: "主页", link: "/" },
       { text: "文档", link: "/home/" },
       { text: "关于", link: "/about/" },
-      { text: "GitHub", link: "https://google.com" },
+      { text: "GitHub", link: "https://github.com/Mrzhou-jh/simple-ui" },
     ],
     sidebar: [
       {
