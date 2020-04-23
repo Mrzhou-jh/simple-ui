@@ -33,6 +33,8 @@ export default {
   }
 };
 </script>
-
-<style>
+<style lang="scss" scoped>
+div {
+  margin-bottom: 20px;
+}
 </style>

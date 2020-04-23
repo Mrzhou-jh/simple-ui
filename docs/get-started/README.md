@@ -4,7 +4,7 @@
 该项目为自我学习提升项目，目前还在持续开发中，请不要使用在生产环境中。
 :::
 
-## :inbox_tray: 下载安装
+## 下载安装
 
 ```sh
 npm install simple-ui
@@ -14,9 +14,9 @@ npm install simple-ui
 yarn add simple-ui
 ```
 
-## :computer: 开始使用
+## 开始使用
 
-### :hammer: 添加 CSS 样式
+### 添加 CSS 样式
 
 使用本框架前，请在 CSS 中开启 border-box
 
@@ -29,7 +29,7 @@ yarn add simple-ui
 
 IE 8 及以上浏览器支持此样式。
 
-### :hammer: 引入 simple-ui   :keyboard: :wrench: :bookmark_tabs: 
+### 引入 simple-ui
 
 ```js
 import { Button } from "simple-ui";

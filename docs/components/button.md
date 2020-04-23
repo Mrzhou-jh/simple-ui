@@ -5,9 +5,10 @@
 ## 主题按钮
 
 预览
+<br/>
 
 <button-demos></button-demos>
-
+<br/>
 示例代码
 
 ```html
@@ -30,11 +31,13 @@
 <s-button round colortheme="danger">按钮</s-button>
 ```
 
-## 一般按钮
-
+## 普通按钮
+<br/>
 预览
-<button-demos1></button-demos1>
+<br/>
 
+<button-demos1></button-demos1>
+<br/>
 示例代码
 
 ```html
