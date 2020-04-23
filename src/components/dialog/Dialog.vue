@@ -1,24 +1,26 @@
 <template>
-  <div class="s-d-wrapper" v-if="visible" @click.self="close">
-    <div class="s-dialog">
-      <div class="s-d-header">
-        <slot name="header">
-          <span>{{title}}</span>
-        </slot>
-        <button @click="close">
-          <s-svg-icon iconname="close"></s-svg-icon>
-        </button>
-      </div>
-      <div class="s-d-body">
-        <slot>
-          <span>这是一段内容</span>
-        </slot>
-      </div>
-      <div class="s-d-footer" v-if="$slots.footer">
-        <slot name="footer"></slot>
+  <transition name="fade">
+    <div class="s-d-wrapper" v-if="visible" @click.self="close">
+      <div class="s-dialog">
+        <div class="s-d-header">
+          <slot name="header">
+            <span>{{title}}</span>
+          </slot>
+          <button @click="close">
+            <s-svg-icon iconname="close"></s-svg-icon>
+          </button>
+        </div>
+        <div class="s-d-body">
+          <slot>
+            <span>这是一段内容</span>
+          </slot>
+        </div>
+        <div class="s-d-footer" v-if="$slots.footer">
+          <slot name="footer"></slot>
+        </div>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -47,6 +49,10 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
 .s-d-wrapper {
   width: 100%;
   height: 100vh;
