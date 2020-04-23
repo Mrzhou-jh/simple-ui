@@ -1,25 +1,21 @@
 <template>
   <div id="app">
-    {{da}}
-    <s-button svgicon="xiazai" :loading="loading2" @click="loading2 = !loading2" colortheme="danger">下载</s-button>
+    <s-dialog :visible.sync="visible"></s-dialog>
   </div>
 </template>
 
 <script>
-
-import SButton from "./components/button/Button.vue";
-import ss from './components/svgicon/SvgIcon.vue'
+import SDialog from "./components/dialog/Dialog.vue";
 export default {
-  name: 'App',
-  data(){
-    return {da:"hdsjkfhdsk"}
+  name: "App",
+  data() {
+    return { visible: true };
   },
   components: {
-   SButton
+    SDialog
   }
-}
+};
 </script>
 
 <style lang="scss">
-
 </style>
