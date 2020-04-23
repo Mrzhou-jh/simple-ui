@@ -17,6 +17,10 @@ export default {
 };
 </script>
 <style>
+*{
+  margin: 0;
+  padding: 0;
+}
 @keyframes loading-animation {
   from {
     transform: rotate(0deg);

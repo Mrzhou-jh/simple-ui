@@ -53,28 +53,34 @@ export default {
   background-color: rgba(134, 130, 130, 0.5);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
   .s-dialog {
     background-color: white;
     box-sizing: border-box;
-    width: 50%;
-    height: 200px;
-    margin-top: 100px;
+    min-width: 400px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     padding: 0 20px;
-    button {
-      background: transparent;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      font-size: 16px;
-    }
+
     .s-d-header {
       height: 50px;
       line-height: 50px;
       position: relative;
       button {
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 16px;
         position: absolute;
         top: 15px;
         right: 0px;

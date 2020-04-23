@@ -22,7 +22,7 @@ module.exports = {
         title: "组件",
         collapsable: false,
         sidebarDepth: 2,
-        children: ["/components/button", "/components/input", "/components/tabs",'/components/popover'],
+        children: ["/components/button", "/components/input", "/components/tabs",'/components/popover','/components/dialog'],
       },
     ],
   },
