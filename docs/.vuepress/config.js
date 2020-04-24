@@ -7,7 +7,7 @@ module.exports = {
     smoothScroll: true,
     nav: [
       { text: "主页", link: "/" },
-      { text: "文档", link: "/home/" },
+      { text: "文档", link: "/components/button" },
       { text: "关于", link: "/about/" },
       { text: "GitHub", link: "https://github.com/Mrzhou-jh/simple-ui" },
     ],
